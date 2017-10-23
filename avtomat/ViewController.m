@@ -70,7 +70,7 @@ NSMutableArray *ar;
                 break;
             }
         }
-        if (((a%2)==0)&&(b==1))
+        if (((a%2)==0)&&(b==1)&&(a!=0))
         {
             [ar addObject:str];
         }
