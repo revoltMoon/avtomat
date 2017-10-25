@@ -25,6 +25,8 @@ NSMutableArray *ar;
     NSString *str0 = [[NSString alloc] initWithString:_textView.text];
     str0 = [str0 lowercaseString];
     NSMutableString *str = [[NSMutableString alloc] initWithString:str0];
+    [str deleteCharactersInRange:NSMakeRange(0, 1)];
+    [str deleteCharactersInRange:NSMakeRange(str.length-1, 1)];
     NSArray *arr = [[NSMutableArray alloc]init];
     for (int i=1;i<str.length;i+=2){
         [str insertString:@" " atIndex:i];
